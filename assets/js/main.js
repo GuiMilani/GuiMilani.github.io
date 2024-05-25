@@ -1,14 +1,3 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
-function myMenuFunction() {
-  var menuBtn = document.getElementById("myNavMenu");
-
-  if (menuBtn.className === "nav-menu") {
-    menuBtn.className += " responsive";
-  } else {
-    menuBtn.className = "nav-menu";
-  }
-}
-
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () {
   headerShadow();
@@ -35,11 +24,11 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
   var typingEffect = new Typed(".typedText", {
-    strings : ["Web Developer", "CS Student", "Machine Learning entusiast", "fond of Art"],
+    strings : ["Hello, I'm Guilherme.", "Full Stack Developer.", "Creative Programming.", "Computer Science Student.", "Machine Learning Researcher.", "Culturally Engaged.", "Welcome to my portfolio."],
     loop : true,
-    typeSpeed : 100,
-    backSpeed : 80,
-    backDelay : 2000
+    typeSpeed : 55,
+    backSpeed : 25,
+    backDelay : 900,
   })
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
