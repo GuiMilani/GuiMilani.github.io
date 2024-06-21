@@ -3,18 +3,18 @@
 
 /* ----- VARIABLES ----- */
 :root{
-    --body-color: rgb(250, 250, 250);
-	--color-white: rgb(255, 255, 255);
+    --body-color: rgb(82, 82, 82);
+	--color-white: rgb(56, 56, 56);
 
-	--text-color-second: rgb(68, 68, 68);
-	--text-color-third: rgb(157, 142, 233);
+	--text-color-second: rgb(212, 212, 212);
+	--text-color-third: rgb(144, 150, 206);
 
-	--first-color: rgb(98, 90, 139);
-	--first-color-hover: rgb(71, 71, 71);
+	--first-color: rgb(155, 164, 226);
+	--first-color-hover: rgb(185, 185, 185);
 
-	--second-color: rgba(148, 148, 148, 0.692);
-	--third-color: rgb(66, 66, 66);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
+	--second-color: rgba(184, 184, 184, 0.692);
+	--third-color: rgb(185, 185, 185);
+    --first-shadow-color: rgba(24, 24, 24, 0.1);
 
 }
 
@@ -54,7 +54,7 @@ html{
 .btn{
 	font-weight: 500;
 	padding: 12px 20px;
-	background: #efefef;
+	background: #bbbbbb;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
@@ -98,6 +98,9 @@ nav{
 .nav-logo{
 	position: relative;
 	padding-top: 15px;
+}
+#nav-logo-img{
+	filter: invert(100%);
 }
 .nav-name{
 	font-size: 30px;
@@ -170,12 +173,12 @@ nav{
 .featured-name{
 	font-size: 50px;
 	font-weight: 600;
-	color: var(--text-color-second);
+	color: var(--text-color-third);
 	margin-block: 20px;
 }
 .typedText{
 	text-transform: capitalize;
-	color: var(--text-color-third);
+	color: var(--text-color-second);
 }
 .featured-text-info{
 	font-size: 15px;
@@ -207,6 +210,7 @@ nav{
 	border-radius: 50%;
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 	cursor: pointer;
+	color: var(--third-color)
 }
 .icon-btn{
 	padding: 0;
@@ -252,7 +256,7 @@ nav{
 	transform: translate(-40%, -50%) rotate(50deg);
 	width: 80px;
 	height: 80px;
-	background: rgb(83, 89, 112);
+	background: var(--text-color-third);
 	clip-path: polygon(
 		50% 0%,
 		61% 35%,
@@ -350,7 +354,7 @@ h3{
 .about-btn button{
 	position: absolute;
 	right: 20px;
-	bottom: 20px;
+	bottom: 18px;
 	background: var(--first-color);
 	color: var(--color-white);
 	border-radius: 30px;
@@ -524,8 +528,11 @@ footer{
 	align-items: center;
 	flex-direction: column;
 	row-gap: 30px;
-	background: #F8F8F8;
+	background: #5c5c5c;
 	padding-block: 40px 60px;
+}
+footer p{
+	color: var(--text-color-second);
 }
 .top-footer p{
 	font-size: 25px;
@@ -550,6 +557,9 @@ footer{
 .bottom-footer{
 	font-size: 14px;
 	margin-top: 10px;
+}
+.bottom-footer a{
+	color: var(--text-color-third);
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
