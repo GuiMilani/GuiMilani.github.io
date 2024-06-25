@@ -256,7 +256,7 @@ nav{
 	transform: translate(-40%, -50%) rotate(50deg);
 	width: 80px;
 	height: 80px;
-	background: var(--text-color-third);
+	background: rgba(125, 125, 125, 0.242);
 	clip-path: polygon(
 		50% 0%,
 		61% 35%,
@@ -663,4 +663,26 @@ footer p{
 	.input-field{
 		width: 100%;
 	}
+}
+
+canvas {
+	position: absolute;
+	top: 70%;
+	left: 80%;  
+	transform: translate(-40%, -50%) rotate(50deg);
+	width: 80px;
+	height: 80px;
+	clip-path: polygon(
+		50% 0%,
+		61% 35%,
+		98% 35%,
+		68% 57%,
+		79% 91%,
+		50% 70%,
+		21% 91%,
+		32% 57%,
+		2% 35%,
+		39% 35%
+	);
+	animation: starFloat 30s ease-in-out infinite;
 }
