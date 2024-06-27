@@ -325,6 +325,9 @@ nav{
 }
 .top-header span{
 	color: #999;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
 }
 h3{
 	font-size: 20px;
