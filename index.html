@@ -44,6 +44,23 @@
             </li>
           </ul>
         </div>
+        <audio id="player">
+          <source src="https://stream-relay-geo.ntslive.net/mixtape" type="audio/mpeg">
+        </audio>
+        <div>
+          <button class="player-button" onclick="play()">
+            <i class="uil uil-play"></i>
+          </button> 
+          <button class="player-button" onclick="pause()">
+            <i class="uil uil-pause"></i>
+          </button> 
+          <button class="player-button" onclick="decrease_vol()">
+            <i class="uil uil-volume-down"></i>
+          </button>
+          <button class="player-button" onclick="increase_vol()">
+            <i class="uil uil-volume-up"></i>
+          </button> 
+        </div>
         <div class="nav-button">
           <button class="btn" onclick="downloadFile()">
             Download CV
@@ -64,7 +81,7 @@
           </div>
           <div class="featured-image">
             <div class="image">
-              <img src="assets/images/avatar.jpeg" alt="avatar" />
+              <img src="assets/images/avatar.png" alt="avatar" />
             </div>
             <canvas id="the-art"></canvas>
             <div class="star"></div>

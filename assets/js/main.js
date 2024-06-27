@@ -170,3 +170,20 @@ function drawLines() {
 }
 
 setInterval(drawLines, 200);
+
+/* ----- RADIO FUNCTIONS ----- */
+
+let player = document.getElementById("player");
+function play() {
+  player.volume = 0.2;
+  player.play();
+}
+function pause() {
+  player.pause();
+}
+function decrease_vol() {
+  player.volume -= 0.1;
+}
+function increase_vol() {
+  player.volume += 0.1;
+}

@@ -256,7 +256,7 @@ nav{
 	transform: translate(-40%, -50%) rotate(50deg);
 	width: 80px;
 	height: 80px;
-	background: rgba(125, 125, 125, 0.242);
+	background: rgba(240, 239, 239, 0.073);
 	clip-path: polygon(
 		50% 0%,
 		61% 35%,
@@ -685,4 +685,21 @@ canvas {
 		39% 35%
 	);
 	animation: starFloat 30s ease-in-out infinite;
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+	position: relative;
+	align-self: center;
+}
+
+.player-button {
+	cursor: pointer;
+	border: none;
+	background-color: rgba(24, 100, 171, 0);
+	color: var(--text-color-second);
+}
+
+.player-button i{
+	font-size: 18px;
 }
