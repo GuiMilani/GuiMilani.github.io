@@ -223,6 +223,7 @@ nav{
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
+	position: relative;
 	display: flex;
 	justify-content: right;
 	align-content: center;
@@ -231,6 +232,9 @@ nav{
 	position: relative;
 }
 .image{
+	z-index: 1;
+	position: absolute;
+	top: 22%;
 	margin: auto 0;
 	width: 380px;
 	height: 380px;
@@ -276,6 +280,17 @@ nav{
 	50% {
 	  transform: translateY(15px) rotate(120deg);
 	}
+}
+canvas {
+	left: 7%;
+	z-index: 0;
+	position: relative;
+	margin: auto 0;
+	width: 380px;
+	height: 380px;
+	border-radius: 55% 45% 55% 45%;
+	animation: imgFloat 7s ease-in-out infinite;
+	background: rgba(0, 0, 0, 0.063);
 }
 .scroll-btn{
 	position: absolute;
@@ -345,14 +360,12 @@ h3{
 	padding-block: 30px 70px;
 	padding-inline: 20px;
 	width: 100%;
-	background: var(--color-white);
-	box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 	border-radius: 20px;
 }
 .about-info p{
 	text-align: center;
 	font-size: 15px;
-	color: #777;
+	color: var(--text-color-second);
 }
 .about-btn button{
 	position: absolute;
@@ -474,7 +487,7 @@ h3{
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i{
-	color: #777;
+	color: #372749b1;
 	z-index: 2;
 }
 
@@ -498,6 +511,7 @@ h3{
 	border-radius: 10px;
 	padding-inline: 20px;
 	outline: none;
+	color: var(--text-color-second)
 }
 textarea{
 	width: 100%;
@@ -508,6 +522,7 @@ textarea{
 	padding: 15px 20px;
 	outline: none;
 	resize: none;
+	color: var(--text-color-second)
 }
 .form-button>.btn{
 	display: flex;
@@ -621,13 +636,19 @@ footer p{
 	.featured-image{
 		order: 1;
 		justify-content: center;
-		min-height: 150px;
+		min-height: 200px;
 		width: 100%;
 		margin-top: 65px;
 	}
 	.image, .image img{
-		width: 150px;
-		height: 150px;
+		width: 200px;
+		height: 200px;
+	}
+	canvas{
+		top: 29%;
+		left: -1%;
+		width: 200px;
+		height: 200px;
 	}
 	.row{
 		display: flex;
@@ -666,28 +687,6 @@ footer p{
 	.input-field{
 		width: 100%;
 	}
-}
-
-canvas {
-	position: absolute;
-	top: 70%;
-	left: 80%;  
-	transform: translate(-40%, -50%) rotate(50deg);
-	width: 80px;
-	height: 80px;
-	clip-path: polygon(
-		50% 0%,
-		61% 35%,
-		98% 35%,
-		68% 57%,
-		79% 91%,
-		50% 70%,
-		21% 91%,
-		32% 57%,
-		2% 35%,
-		39% 35%
-	);
-	animation: starFloat 30s ease-in-out infinite;
 }
 
 audio {

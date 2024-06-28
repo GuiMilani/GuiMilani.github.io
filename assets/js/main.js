@@ -121,9 +121,8 @@ function headerShadow() {
     duration:1, ease:'none',
   })
 
-/* ----- HORIZONTAL SCROLL ----- */
 
-
+/* ----- COLORED LINES ART CANVAS ----- */
 const canvas = document.getElementById('the-art');
 const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
