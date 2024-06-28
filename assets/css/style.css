@@ -550,7 +550,6 @@ footer{
 	align-items: center;
 	flex-direction: column;
 	row-gap: 30px;
-	background: #5c5c5c;
 	padding-block: 40px 60px;
 }
 footer p{
