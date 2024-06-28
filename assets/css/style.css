@@ -634,6 +634,7 @@ footer p{
 		margin-top: 2em;
 	}
 	.featured-image{
+		left: 7%;
 		order: 1;
 		justify-content: center;
 		min-height: 200px;
