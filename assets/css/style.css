@@ -541,6 +541,10 @@ textarea{
 
 /* ----- FOOTER BOX ----- */
 footer{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	padding-inline: 9vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -596,6 +600,9 @@ footer p{
 	.nav-button{
 		display: none;
 	}
+	.nav_list{
+		display: none;
+	}
 	.nav-menu.responsive{
 		right: 0;
 	}
@@ -634,7 +641,6 @@ footer p{
 		margin-top: 2em;
 	}
 	.featured-image{
-		left: 7%;
 		order: 1;
 		justify-content: center;
 		min-height: 200px;
