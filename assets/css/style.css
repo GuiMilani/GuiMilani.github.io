@@ -430,6 +430,15 @@ h3{
 	font-size: 15px;
 	color: #777;
 }
+.project-box p{
+	display: block;
+	color: var(--text-color-second);
+	font-size: smaller;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
 .project-box::after, .contact-info::after{
 	content: "";
 	position: absolute;
@@ -446,7 +455,8 @@ h3{
 }
 .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
+.project-box:hover.project-box>label,
+.project-box:hover.project-box>p{
 	color: var(--color-white);
 	z-index: 2;
 }
