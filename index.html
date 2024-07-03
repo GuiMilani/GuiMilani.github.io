@@ -11,6 +11,8 @@
 
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
 
     <title>Portfolio Guilherme</title>
   </head>
@@ -38,6 +40,10 @@
               <div class="circle"></div>
             </li>
             <li class="nav_list">
+              <a href="#bio" class="nav-link">Bio</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
               <a href="#contact" class="nav-link">Contact</a>
               <div class="circle"></div>
             </li>
@@ -61,7 +67,7 @@
           </button> 
         </div>
         <div class="nav-button">
-          <button class="btn" onclick="downloadFile()">
+          <button class="btn" onclick="downloadCV()">
             Download CV
             <i class="uil uil-file-alt"></i>
           </button>
@@ -82,7 +88,7 @@
             <div class="image">
               <img src="assets/images/avatar.png" alt="avatar" />
             </div>
-            <canvas id="the-art"></canvas>
+            <canvas id="line-art"></canvas>
           </div>
           <div class="scroll-icon-box">
             <a href="#about" class="scroll-btn">
@@ -109,7 +115,7 @@
                   Check my Curriculum vitæ and learn more about my expertise and experience.
                 </p>
                 <div class="about-btn">
-                  <button class="btn" onclick="downloadFile()">
+                  <button class="btn" onclick="downloadCV()">
                     Download CV
                     <i class="uil uil-import"></i>
                   </button>
@@ -172,6 +178,46 @@
               <i class="uil uil-award"></i>
               <h3>Undergraduate Research</h3>
               <p>Studied Machine Learning applications onto Neutron Stars Equation of State.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- BIO BOX ---------------- -->
+
+        <section class="section" id="bio">
+          <div class="top-header">
+            <h1>Bio</h1>
+          </div>
+          <div class="row" id="bio-row">
+            <div class="col">
+              <div class="bio-info">
+                <h3>Who am I?</h3>
+                <p>
+                  My name is Guilherme Milani de Oliveira, and I was born in Guarulhos, São Paulo, Brazil. 
+                  My passion for technology ignited my journey in the field of Computer Science at the Federal University of São Carlos.
+                  However, my curious nature dates back to childhood — I’ve always tried to find my own solutions to problems.
+                  Beyond code and algorithms, my curiosity led me to delve into Philosophy studies from a young age. 
+                  But that’s not all — I maintain a deep connection with art, both as a passion and a therapeutic outlet.                  
+                </p>
+                <p>
+                  Recently, while developing this website, I aimed for a balance between professional experiences and personal expression.
+                  I wanted to create a space that goes beyond pragmatism, serving its function but also evoking emotions in the viewer.
+                  If this somehow made you want to also explore your creative side, I consider my mission accomplished. 
+                  And feel free to use the source code.
+                </p>
+                <p>
+                  I hope you enjoy exploring my website — it’s a reflection of my multifaceted interests and creative spirit!
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="random-art-box">
+                <div id="random-art" onclick="setup();draw()">
+                  <script src="assets/js/sketch.js"></script>
+                  <script src="assets/js/tile.js"></script>
+                </div>
+                <p>Click this art to regenerate it.</p>
+              </div>
             </div>
           </div>
         </section>

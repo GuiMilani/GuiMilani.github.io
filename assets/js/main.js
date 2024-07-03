@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 
 /* ----- DOWNLOAD FUNCTION ----- */
-function downloadFile() {
+function downloadCV() {
   window.open("assets/documents/Guilherme-Milani-CV.pdf")
 }
 
@@ -64,6 +64,7 @@ function headerShadow() {
   })
 
   srLeft.reveal('.about-info',{delay: 100})
+  srLeft.reveal('.bio-info',{delay:100})
   srLeft.reveal('.contact-info',{delay:100})
 
 /* -- ABOUT SKILLS & FORM BOX -- */
@@ -75,7 +76,9 @@ function headerShadow() {
   })
 
   srRight.reveal('.skills-box',{delay: 100})
+  srRight.reveal('.random-art-box',{delay: 100})
   srRight.reveal('.form-control',{delay: 100})
+
 
 /* ----- CHANGE ACTIVE LINK ----- */
   const sections = document.querySelectorAll('section[id]')
@@ -107,7 +110,7 @@ function headerShadow() {
 
   gsap.set('#nav-logo-img', {xPercent:-50});
 
-  var rotate = gsap.timeline({
+  var rotate_logo = gsap.timeline({
     scrollTrigger:{
       trigger: "#container",
       pin: true,
@@ -123,7 +126,7 @@ function headerShadow() {
 
 
 /* ----- COLORED LINES ART CANVAS ----- */
-const canvas = document.getElementById('the-art');
+const canvas = document.getElementById('line-art');
 const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;

@@ -281,7 +281,7 @@ nav{
 	  transform: translateY(15px) rotate(120deg);
 	}
 }
-canvas {
+#line-art {
 	left: 7%;
 	z-index: 0;
 	position: relative;
@@ -461,6 +461,35 @@ h3{
 	z-index: 2;
 }
 
+/* ----- BIO INFO ----- */
+#bio-row{
+	align-items: center;
+}
+.bio-info,.random-art-box{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-block: 30px 70px;
+	padding-inline: 20px;
+	width: 100%;
+	border-radius: 20px;
+}
+.bio-info p{
+	text-align: center;
+	font-size: 15px;
+	color: var(--text-color-second);
+}
+#random-art{
+	margin: 10px;
+	align-self: center;
+	cursor: pointer;
+}
+.random-art-box p{
+	text-align: center;
+	color: var(--text-color-second);
+	margin-block: 5px;
+}
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
@@ -497,7 +526,7 @@ h3{
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i{
-	color: #372749b1;
+	color: rgb(78, 72, 81);
 	z-index: 2;
 }
 
@@ -660,7 +689,7 @@ footer p{
 		width: 200px;
 		height: 200px;
 	}
-	canvas{
+	#line-art{
 		top: 29%;
 		left: -1%;
 		width: 200px;
