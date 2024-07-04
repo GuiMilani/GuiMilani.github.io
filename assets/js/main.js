@@ -1,3 +1,8 @@
+/* ----- GET CURRENT YEAR  ----- */
+function getCurrentAge() {
+  return new Date().getFullYear() - 2001;
+}
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () {
   headerShadow();

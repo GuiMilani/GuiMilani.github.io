@@ -292,19 +292,32 @@ nav{
 	animation: imgFloat 7s ease-in-out infinite;
 	background: rgba(0, 0, 0, 0.063);
 }
-.scroll-btn{
+.scroll-icon-box{
+	width: 260px;
+	height: 60px;
 	position: absolute;
 	bottom: 50px;
 	left: 50%;
 	translate: -50%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+}
+.scroll-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 150px;
 	height: 50px;
 	gap: 5px;
 	text-decoration: none;
 	color: var(--text-color-second);
+	background: var(--color-white);
+	border-radius: 30px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.contact-button{
+	text-decoration: none;
 	background: var(--color-white);
 	border-radius: 30px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
@@ -439,6 +452,12 @@ h3{
 	padding-left: 10px;
 
 }
+.project-box img{
+	width: 76;
+	height: 76px;
+	margin-bottom: 25px;
+	filter: brightness(0) saturate(100%) invert(61%) sepia(18%) saturate(730%) hue-rotate(197deg) brightness(97%) contrast(87%);
+}
 .project-box::after, .contact-info::after{
 	content: "";
 	position: absolute;
@@ -458,6 +477,10 @@ h3{
 .project-box:hover.project-box>label,
 .project-box:hover.project-box>p{
 	color: var(--color-white);
+	z-index: 2;
+}
+.project-box:hover.project-box img{
+	filter: brightness(0) saturate(100%) invert(18%) sepia(78%) saturate(0%) hue-rotate(162deg) brightness(90%) contrast(91%);
 	z-index: 2;
 }
 
