@@ -24,7 +24,7 @@ O site é composto por 5 seções:
 - **Home:** Nele temos uma tela simples com frases se alteranando com um efeito de digitação e uma animação exibindo uma imagem minha;
 - **About:** Nessa seção trago uma descrição sobre meus conhecimentos e mini cards com algumas das ferramentas que sei utilizar;
 - **Experience:** Aqui temos cards para algumas experiências de trabalho que já tive, com uma breve descrição abaixo;
-- **Bio:** Apresenta mais informações pessoais sobre mim, sobre o site e outras qualidades que possuo como profissional;
+- **Bio:** Apresenta mais informações pessoais sobre mim, sobre o site e outras qualidades que possuo como profissional, além de uma arte generativa em p5.js;
 - **Contact:** Exibe informações para contato e um formulário que pode me enviar o nome do visitante do site, seu email para contato e um breve texto;
 
 ---
